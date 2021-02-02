@@ -1,0 +1,110 @@
+.main-nav {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.main-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+.item {
+  position: relative;
+}
+.nav-link-active {
+  color: $button-link-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 16px;
+  display: inline-flex;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: $title-text-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: $button-link-color;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $button-link-color;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(0);
+  }
+  &:hover::before,
+  &:focus::before {
+    transform: scale(1);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.nav-link-active,
+.nav-link {
+  transition-property: color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link-active::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $button-link-color;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-button {
+  margin-left: auto;
+  display: inline-flex;
+  padding: 0;
+  background-color: $primary-bgr;
+  border-style: none;
+  cursor: pointer;
+  color: black;
+  fill: black;
+  &:focus,
+  &:hover {
+    color: $button-link-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.icon-menu {
+  fill: currentColor;
+}
+.menu-closed {
+  display: none;
+}
