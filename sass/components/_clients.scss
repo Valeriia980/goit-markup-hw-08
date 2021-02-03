@@ -1,0 +1,62 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.tittle-clients {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.171;
+  font-weight: 700;
+  letter-spacing: $main-letter-spacing;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: -15px;
+    margin-bottom: -15px;
+  }
+}
+.clients-list-item {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: calc((100% - 2 * 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 30px) / 6);
+  }
+}
+.clients-list-link {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $clients-link-color;
+  fill: $clients-link-color;
+  border: 1px solid $clients-link-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: fill, border-color, filter;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $button-link-color;
+    fill: $button-link-color;
+  }
+}
