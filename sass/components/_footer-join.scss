@@ -53,6 +53,105 @@
 .footer-list-item:not(:last-child) {
   margin-right: 10px;
 }
+.footer-submit {
+  flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+.flex-desktop {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+.input-submit {
+  margin-bottom: 20px;
+}
+.footer-send {
+  width: 450px;
+  height: 50px;
+  padding-left: 16px;
+  border-color: $primary-text-color;
+  background-color: $footer-hero-bgc;
+  color: $main-text-color;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  $main-letter-spacing: $main-letter-spacing;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+.flex-cont-tablet {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    padding-right: 74px;
+
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.footer-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+.footer-secondary {
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
+}
+.footer-button {
+  color: $main-text-color;
+  background-color: $button-link-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: $main-letter-spacing;
+  border-style: none;
+  border-radius: 4px;
+
+  padding: 10px 29px;
+
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+.footer-icon {
+  margin-left: 10px;
+}
 
 .social-footer-svg {
   fill: $primary-bgr;

@@ -15,11 +15,12 @@
 }
 .future-section {
   padding-top: 60px;
-  padding-bottom: 0;
+  padding-bottom: 60px;
   display: block;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 .future {
