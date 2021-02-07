@@ -1,0 +1,57 @@
+footer {
+  background-color: $footer-hero-bgc;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0;
+  margin-right: 0;
+}
+footer .logotype span {
+  color: $main-text-color;
+}
+.footer-container {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+.footer-main {
+  display: inline-block;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+.address-footer,
+.contacts-footer {
+  display: block;
+  line-height: 1.71;
+}
+.address-footer {
+  font-style: normal;
+  color: $main-text-color;
+  font-size: $main-font-size;
+  line-height: 24px;
+  letter-spacing: $main-letter-spacing;
+  margin-bottom: 9px;
+}
+
+.contacts-footer a {
+  padding: 0;
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: $main-font-size;
+  line-height: 24px;
+  letter-spacing: $main-letter-spacing;
+}

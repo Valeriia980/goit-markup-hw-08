@@ -1,5 +1,26 @@
+.hidden-menu-mobile {
+  background-color: $primary-bgr;
+  &.open-menu {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    widows: 100%;
+    display: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    z-index: 10;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .main-nav {
-  display: none;
   margin: 0;
   padding: 0;
 
@@ -81,9 +102,8 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.mobile-button {
+.menu-button {
   margin-left: auto;
   display: inline-flex;
   padding: 0;
@@ -100,6 +120,8 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.open-menu {
 }
 
 .icon-menu {

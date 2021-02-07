@@ -20,6 +20,7 @@
 
         <div class="header-container container">
             <a class="logotype" href="index.html">Web<span>Studio</span></a>
+            <div class="hidden-menu-mobile open-menu" id="hidden-menu-mobile" data-menu>
         <nav class="navigation">
             <ul class="main-nav">
                 <li class="item"><a class="nav-link-active" href="index.html">Студия</a></li>
@@ -49,8 +50,10 @@
                            
                     +38 096 111 11 11</a></li>
         </ul>
-        <button type="button" class="mobile-button mobile-open" data-menu-button>
-            <svg width="40" height="40" aria-label="Открытие мобильного меню">
+        </div>
+        <button type="button" class="menu-button open-menu" data-menu-button>
+            <svg width="40" height="40" aria-label="Открытие мобильного меню"
+            aria-expanded="false" aria-controls="hidden-menu-mobile">
                 <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
                 <use class="menu-closed" href="./images/sprite.svg#menu-closed"></use>
             </svg>
@@ -564,6 +567,8 @@
     </div>
 </div>
 <script src="./modal.js"></script>
+<script src="./menu.js"></script>
+
 </body>
 
 </html>

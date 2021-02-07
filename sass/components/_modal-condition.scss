@@ -1,0 +1,65 @@
+.conditions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.condition-input-hidden ~ span::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+}
+.condition-input-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.conditions-link {
+  color: $button-link-color;
+  display: inline-flex;
+  text-decoration: underline;
+}
+
+.condition-input-hidden:checked + span::before {
+  background-image: url(../images/checked.svg);
+  background-repeat: no-repeat;
+  background-color: $button-link-color;
+  background-size: contain;
+  background-origin: border-box;
+  border: 2px solid $button-link-color;
+}
+.condition-input-hidden:focus + span::before {
+  border: 2px solid $button-link-color;
+}
+.condition-label {
+  display: flex;
+  align-items: center;
+  font-size: $main-font-size;
+  line-height: 1.71;
+}
+.submit-conditions {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: $main-text-color;
+  background-color: $button-link-color;
+
+  margin: 0 auto;
+  padding: 10px 55px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+}

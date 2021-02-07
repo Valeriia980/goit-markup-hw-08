@@ -72,6 +72,9 @@
 }
 .input-submit {
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .footer-send {
   width: 450px;
@@ -106,14 +109,15 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+    margin-bottom: 0;
   }
 }
 .footer-container {
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .footer-secondary {

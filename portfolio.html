@@ -49,13 +49,20 @@
     
                     +38 096 111 11 11</a></li>
         </ul>
+        <button type="button" class="mobile-button mobile-open" data-menu-button>
+            <svg width="40" height="40" aria-label="Открытие мобильного меню">
+                <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                <use class="menu-closed" href="./images/sprite.svg#menu-closed"></use>
+            </svg>
+        </button>
     </div>
     </header>
     <!--главная область-->
     <main>
         <section class="filter">
-            <div class="container">
+            <div class="container container-portfolio">
                 <h2 class="visually-hidden">Портфолио</h2>
+                <div class="filter-container">
             <ul class="filter-buttons">
             <li class="button-next"><button class="filter-button all" type="button">Все</button></li>
             <li class="button-next"><button class="filter-button" type="button">Веб-сайты</button></li>
@@ -63,7 +70,7 @@
             <li class="button-next"><button class="filter-button" type="button">Дизайн</button></li>
             <li class="button-next"><button class="filter-button" type="button">Маркетинг</button></li>
             </ul>
-        
+            </div>
         <ul class="work-experience"> 
             <li class="work-link">
                 <a href="" class="project-link">
@@ -224,8 +231,8 @@
         </section>
     </main>
 <footer>
-    <div class="container footer-container">
-    
+<div class="container footer-container">
+    <div class="flex-cont-tablet">
         <div class="footer-main">
             <a class="logotype footer-logo" href="./index.html">Web<span class="brg-log">Studio</span></a>
             <address class="address-footer">
@@ -265,23 +272,27 @@
                     </a></li>
             </ul>
         </div>
-        <div class="footer-submit">
-            <p class="join">Подпишитесь на рассылку</p>
+    </div>
+    <div class="footer-submit">
+
+        <p class="join">Подпишитесь на рассылку</p>
+        <div class="flex-desktop">
             <div class="input-submit">
                 <label for="footer-send">
                     <input type="email" class="footer-send" id="footer-send" placeholder="E-mail">
                 </label>
-                <button type="submit" class="footer-button">
-                    Подписаться
-                    <svg class="footer-icon" height="24" width="24">
-                        <use href="./images/sprite.svg#icon-send"></use>
-                    </svg>
-                </button>
             </div>
+            <button type="submit" class="footer-button">
+                Подписаться
+                <svg class="footer-icon" height="24" width="24">
+                    <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+            </button>
         </div>
-    
-    
     </div>
+
+
+</div>
 </footer>
 
     
