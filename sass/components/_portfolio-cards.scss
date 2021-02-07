@@ -1,14 +1,15 @@
 .container-portfolio {
   @media screen and (min-width: 768px) {
-    width: 800px;
+    width: 804px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1209px;
   }
 }
 .work-link {
   display: block;
   cursor: pointer;
+  border: 1px solid #eeeeee;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -83,9 +84,9 @@
   color: $primary-text-color;
 }
 .command-work {
-  border-left: 1px solid #eeeeee;
+  /*border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;*/
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;

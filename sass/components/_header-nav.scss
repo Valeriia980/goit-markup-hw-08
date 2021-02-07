@@ -1,16 +1,12 @@
 .hidden-menu-mobile {
   background-color: $primary-bgr;
-  &.open-menu {
-    display: block;
-  }
-
   @media screen and (max-width: 767px) {
-    widows: 100%;
+    width: 100%;
     display: none;
-    padding-top: 60px;
-    padding-bottom: 60px;
+
+    padding: 48px 40px;
     position: absolute;
-    top: 101%;
+    top: 0;
     left: 0;
     z-index: 10;
   }
@@ -19,13 +15,18 @@
     align-items: baseline;
   }
 }
+.is-open {
+  display: block;
+}
 
 .main-nav {
   margin: 0;
+  margin-bottom: 300px;
   padding: 0;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    margin: 0;
   }
 }
 .main-nav > .item:not(:last-child) {
@@ -36,24 +37,26 @@
 }
 .nav-link-active {
   color: $button-link-color;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-style: normal;
   font-weight: 500;
-  font-size: $main-font-size;
-  line-height: 16px;
-  display: inline-flex;
+  line-height: 47px;
+  font-size: 40px;
   letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-style: normal;
+
+    font-size: $main-font-size;
+    line-height: 16px;
+    display: inline-flex;
+  }
 }
 
 .nav-link {
   color: $title-text-color;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: inline-flex;
   font-weight: 500;
-  font-size: $main-font-size;
-  line-height: 16px;
+  line-height: 47px;
+  font-size: 40px;
   letter-spacing: 0.02em;
   &:hover,
   &:focus {
@@ -61,25 +64,33 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: $button-link-color;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $button-link-color;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transform: scale(0);
-  }
-  &:hover::before,
-  &:focus::before {
-    transform: scale(1);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-flex;
+    font-size: $main-font-size;
+    line-height: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $button-link-color;
+      transition: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scale(0);
+    }
+    &:hover::before,
+    &:focus::before {
+      transform: scale(1);
+      transition: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 .nav-link-active,
@@ -89,21 +100,24 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link-active::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $button-link-color;
+  @media screen and (min-width: 768px) {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $button-link-color;
+  }
 }
 .header-container {
   display: flex;
   align-items: center;
 }
 .menu-button {
+  z-index: 10;
   margin-left: auto;
   display: inline-flex;
   padding: 0;
@@ -121,12 +135,43 @@
     display: none;
   }
 }
-.open-menu {
+.icons-for-menu {
+  fill: currentColor;
+  color: black;
 }
 
 .icon-menu {
-  fill: currentColor;
+  display: block;
 }
 .menu-closed {
   display: none;
+}
+.menu-button.is-open .menu-closed {
+  display: block;
+  color: black;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-social-links {
+  display: flex;
+  margin-top: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-links {
+  color: $button-link-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.adaptive-links:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
 }
