@@ -38,7 +38,7 @@
   }
 }
 .footer-send {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   border-color: $primary-text-color;
@@ -57,4 +57,7 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
+}
+.label-footer {
+  width: 100%;
 }
