@@ -1,16 +1,3 @@
-.footer-secondary {
-  width: 206px;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  @media screen and (max-width: 1200px) {
-    margin-left: auto;
-  }
-}
-
 .join {
   margin-top: 0;
   margin-bottom: 20px;
@@ -30,29 +17,6 @@
   margin-right: 10px;
 }
 
-.social-link-footer {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  transition: 250ms;
-  transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 44px;
-  height: 44px;
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  &:hover,
-  &:focus {
-    background-color: $button-link-color;
-    border-radius: 50%;
-  }
-}
-.footer-list-item:not(:last-child) {
-  margin-right: 10px;
-}
 .footer-submit {
   flex-direction: column;
 
@@ -64,14 +28,11 @@
     margin-left: auto;
   }
 }
-.flex-desktop {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: auto;
-  }
-}
+
 .input-submit {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -96,67 +57,4 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
-}
-.flex-cont-tablet {
-  display: block;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-
-    padding-right: 74px;
-
-    margin-bottom: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-bottom: 0;
-  }
-}
-.footer-container {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-.footer-secondary {
-  @media screen and (min-width: 1200px) {
-    display: inline-block;
-  }
-}
-.footer-button {
-  color: $main-text-color;
-  background-color: $button-link-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 200px;
-  height: 50px;
-
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 700;
-  letter-spacing: $main-letter-spacing;
-  border-style: none;
-  border-radius: 4px;
-
-  padding: 10px 29px;
-
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 12px;
-  }
-}
-.footer-icon {
-  margin-left: 10px;
-}
-
-.social-footer-svg {
-  fill: $primary-bgr;
 }

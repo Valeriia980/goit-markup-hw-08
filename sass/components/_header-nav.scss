@@ -1,24 +1,3 @@
-.hidden-menu-mobile {
-  background-color: $primary-bgr;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    display: none;
-
-    padding: 48px 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: baseline;
-  }
-}
-.is-open {
-  display: block;
-}
-
 .main-nav {
   margin: 0;
   margin-bottom: 300px;
@@ -49,6 +28,25 @@
     font-size: $main-font-size;
     line-height: 16px;
     display: inline-flex;
+  }
+}
+.nav-link-active,
+.nav-link {
+  transition-property: color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link-active::before {
+  @media screen and (min-width: 768px) {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $button-link-color;
   }
 }
 
@@ -92,86 +90,4 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-}
-.nav-link-active,
-.nav-link {
-  transition-property: color;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-link-active::before {
-  @media screen and (min-width: 768px) {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $button-link-color;
-  }
-}
-.header-container {
-  display: flex;
-  align-items: center;
-}
-.menu-button {
-  z-index: 10;
-  margin-left: auto;
-  display: inline-flex;
-  padding: 0;
-  background-color: $primary-bgr;
-  border-style: none;
-  cursor: pointer;
-  color: black;
-  fill: black;
-  &:focus,
-  &:hover {
-    color: $button-link-color;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.icons-for-menu {
-  fill: currentColor;
-  color: black;
-}
-
-.icon-menu {
-  display: block;
-}
-.menu-closed {
-  display: none;
-}
-.menu-button.is-open .menu-closed {
-  display: block;
-  color: black;
-}
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.mobile-social-links {
-  display: flex;
-  margin-top: 64px;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.mobile-links {
-  color: $button-link-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-}
-.adaptive-links:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
-  margin-right: 10px;
 }
