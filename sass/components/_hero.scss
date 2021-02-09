@@ -1,23 +1,71 @@
 .hero {
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: black;
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-size: 1600px 600px;
-    background-color: $footer-hero-bgc;
+  background-color: $footer-hero-bgc;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/img/hero-bgr/mobile/Header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 2dpx),
+    screen and (min-resolution: 192dpi) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/Img\ 2.jpg");
+      url("/img/hero-bgr/mobile/Header-img@2x.jpg");
+  }
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/img/hero-bgr/tablet/Header\ img.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 2dpx),
+      screen and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/img/hero-bgr/tablet/Header\ img@2x.jpg");
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/img/hero-bgr/desktop/Img.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 2dpx),
+      screen and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/img/hero-bgr/desktop/Img@2x.jpg");
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .container-hero {
@@ -27,47 +75,5 @@
   width: 400px;
   @media screen and (min-width: 1200px) {
     width: 696px;
-  }
-}
-.main-hero-cont {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.hero-title {
-  color: $main-text-color;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-family: $main-font-family;
-  @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: 60px;
-  }
-}
-.button-on {
-  margin: 0;
-  cursor: pointer;
-  padding: 10px 32px;
-  border-style: none;
-
-  color: $main-text-color;
-  background-color: $button-link-color;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-  &:hover,
-  &:focus {
-    color: $main-text-color;
   }
 }

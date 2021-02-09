@@ -1,0 +1,30 @@
+.social-link-footer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 44px;
+  height: 44px;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: $button-link-color;
+    border-radius: 50%;
+  }
+}
+.footer-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-icon {
+  margin-left: 10px;
+}
+
+.social-footer-svg {
+  fill: $primary-bgr;
+}

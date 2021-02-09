@@ -158,7 +158,11 @@
         <ul class="work-type">
             <li class="link">
                 <div class="offers">
-                <img class="doing-pic" src="./img/keyboarf.jpg" alt="человек печатает" width="370">
+                    <picture>
+                        <source srcset="./img/working/keyboard.jpg, ./img/working/keyboard@2x.jpg">
+                        <img class="doing-pic" src="./img/working/keyboard.jpg" alt="человек печатает" width="370">
+                    </picture>
+                
                 <div class="overlay">
                     <h3 class="offers-tittle">Десктопные приложения</h3>
                 </div>
@@ -166,7 +170,11 @@
             </li>
             <li class="link">
                 <div class="offers">
-                <img class="doing-pic" src="./img/smartfon.jpg" alt="человек работает на смартфоне" width="370">
+                    <picture>
+                        <source srcset="./img/working/smaptfone.jpg, ./img/working/smaptfone@2x.jpg">
+                        <img class="doing-pic" src="./img/working/smaptfone.jpg" alt="человек работает на смартфоне" width="370">
+                    </picture>
+                
                 <div class="overlay">
                     <h3 class="offers-tittle">Мобильные приложения</h3>
                 </div>
@@ -174,7 +182,11 @@
             </li>
             <li class="link">
                 <div class="offers">
-                <img class="doing-pic" src="./img/pc.jpg" alt="планшет и ноутбук" width="370">
+                    <picture>
+                        <source srcset="./img/working/pc.jpg, ./img/working/pc@2x.jpg">
+                        <img class="doing-pic" src="./img/working/pc.jpg" alt="планшет и ноутбук" width="370">
+                    </picture>
+                
             <div class="overlay">
                 <h3 class="offers-tittle">Дизайнерские решения</h3>
             </div>
@@ -188,7 +200,18 @@
         <h2 class="tittle">Наша команда</h2>
             <ul class="team">
             <li class="link-photo">
-                <img class="photo" src="./img/Igor.jpg" alt="человек1" width="270">
+                
+                <picture>
+                    <source srcset="./img/team/Igor/mobile/Igor.jpg, 
+                    ./img/team/Igor/mobile/Igor-mobile@2x.jpg" 
+                    media="(max-width: 767px)">
+                    <source srcset="./img/team/Igor/tablet/img.jpg, 
+                    ./img/team/Igor/tablet/img@2x.jpg" media="(max-width: 1199px)">
+                    <source srcset="./img/team/Igor/desktop/img.jpg, 
+                  ./img/team/Igor/desktop/img-1.jpg" media="(min-width: 1200px)">
+                    <img class="photo" src="./img/team/Igor/mobile/Igor.jpg" alt="человек1">
+                </picture>
+                
                 <div class="command">
                     <h3 class="name">Игорь Демьяненко</h3>
                     <p class="prof">Product Designer</p>
@@ -236,7 +259,15 @@
                 </li>
                     
             <li class="link-photo">
-                <img class="photo" src="./img/Olga.jpg" alt="человек2" width="270">
+                <picture>
+                    <source srcset="./img/team/Olga/mobile/Olga-mobile.jpg, 
+                     ./img/team/Olga/mobile/Olga-mobile@2x.jpg" media="(max-width: 767px)">
+                    <source srcset="./img/team/Olga/tablet/img.jpg, 
+                     ./img/team/Olga/tablet/img@2x.jpg" media="(max-width: 1199px)">
+                    <source srcset="./img/team/Olga/desktop/img.jpg, 
+                    ./img/team/Olga/desktop/img-1.jpg" media="(min-width: 1200px)">
+                    <img class="photo" src="./img/team/Olga/mobile/Olga-mobile.jpg" alt="человек2">
+                </picture>
                 <div class="command">
                     <h3 class="name">Ольга Репина</h3>
                     <p class="prof">Frontend Developer</p>
@@ -284,7 +315,15 @@
                 </li>
                 
             <li class="link-photo">
-                <img class="photo" src="./img/Nikolaj.jpg" alt="человек3" width="270">
+                <picture>
+                    <source srcset="./img/team/Nikolaj/mobile/Nikolaj-mobile.jpg, 
+                     ./img/team/Nikolaj/mobile/Nikolaj-mobile@2x.jpg" media="(max-width: 767px)">
+                    <source srcset="./img/team/Nikolaj/tablet/img.jpg, 
+                    ./img/team/Nikolaj/tablet/img@2x.jpg" media="(max-width: 1199px)">
+                    <source srcset="./img/team/Nikolaj/desktop/img.jpg, 
+                     ./img/team/Nikolaj/desktop/img-1.jpg" media="(min-width: 1200px)">
+                    <img class="photo" src="./img/team/Nikolaj/mobile/Nikolaj-mobile.jpg" alt="человек3">
+                </picture>
                 <div class="command">
                     <h3 class="name">Николай Тарасов</h3>
                     <p class="prof">Marketing</p>
@@ -331,7 +370,15 @@
                 </li>
                 
             <li class="link-photo">
-                <img class="photo" src="./img/Mikhail.jpg" alt="человек4" width="270">
+                <picture>
+                    <source srcset="./img/team/Mike/mobile/Mike-mobile.jpg, 
+                     ./img/team/Mike/mobile/Mike-mobile@2x.jpg" media="(max-width: 767px)">
+                    <source srcset="./img/team/Mike/tablet/img.jpg, 
+                    ./img/team/Mike/tablet/img@2x.jpg" media="(max-width: 1199px)">
+                    <source srcset="./img/team/Mike/desktop/img.jpg, 
+                    ./img/team/Mike/desktop/img-1.jpg" media="(min-width: 1200px)">
+                    <img class="photo" src="./img/team/Mike/mobile/Mike-mobile.jpg" alt="человек4">
+                </picture>
                 <div class="command">
                     <h3 class="name">Михаил Ермаков</h3>
                     <p class="prof">UI Designer</p>

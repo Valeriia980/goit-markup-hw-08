@@ -1,17 +1,26 @@
-@import "./header-nav";
-@import "./logo";
 @import "../utils/variables";
+@import "./logo";
+@import "./header-main";
+@import "./header-nav";
 @import "./header-contacts";
+@import "./header-mobile-menu";
+@import "./header-mobile-social";
+
 @import "./hero";
+@import "./hero-content";
+
 @import "./future";
 @import "./working";
 @import "./our-team";
+@import "./our-team-social";
 @import "./clients";
-@import "./footer-contacts";
+
+@import "./footer-main";
+@import "./footer-contacts-and-button";
 @import "./footer-join";
+@import "./footer-social";
 @import "./modal-window";
 @import "./modal-form";
 @import "./modal-condition";
 @import "./portfolio";
 @import "./portfolio-cards";
-

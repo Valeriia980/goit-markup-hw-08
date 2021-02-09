@@ -59,7 +59,10 @@
   &:focus {
     color: $button-link-color;
   }
-
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: $main-font-size;
     line-height: 1.14;
@@ -74,7 +77,4 @@
   }
   margin-right: 10px;
   fill: currentColor;
-}
-header {
-  border-bottom: 1px solid #ececec;
 }

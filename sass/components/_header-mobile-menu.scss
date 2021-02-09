@@ -1,0 +1,60 @@
+.hidden-menu-mobile {
+  background-color: $primary-bgr;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    display: none;
+
+    padding: 48px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.is-open {
+  display: block;
+}
+
+.menu-button {
+  z-index: 10;
+  margin-left: auto;
+  display: inline-flex;
+  padding: 0;
+  background-color: $primary-bgr;
+  border-style: none;
+  cursor: pointer;
+  color: black;
+  fill: black;
+  &:focus,
+  &:hover {
+    color: $button-link-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.icons-for-menu {
+  fill: currentColor;
+}
+
+.icon-menu {
+  display: block;
+}
+.menu-closed {
+  display: none;
+}
+.menu-button.is-open .menu-closed {
+  display: block;
+  &:focus,
+  &:hover {
+    color: $button-link-color;
+  }
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}

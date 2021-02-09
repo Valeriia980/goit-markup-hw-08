@@ -1,3 +1,11 @@
+.container-portfolio {
+  @media screen and (min-width: 768px) {
+    width: 804px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1209px;
+  }
+}
 .filter {
   padding-top: 60px;
   padding-bottom: 60px;
