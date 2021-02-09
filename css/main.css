@@ -108,8 +108,15 @@ header {
   }
 }
 
-.main-nav > .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .main-nav > .item:not(:last-child) {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-nav > .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .item {
@@ -204,12 +211,6 @@ header {
 @media screen and (max-width: 1199px) {
   .contacts {
     flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -313,6 +314,10 @@ header {
 @media screen and (min-width: 768px) {
   .hidden-menu-mobile {
     display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hidden-menu-mobile {
     align-items: baseline;
   }
 }
@@ -564,6 +569,11 @@ header {
   text-transform: uppercase;
   color: #212121;
 }
+@media screen and (min-width: 768px) {
+  .subtitle {
+    text-align: start;
+  }
+}
 
 .description {
   line-height: 1.71;
@@ -681,6 +691,16 @@ header {
 .photo {
   margin-bottom: 30px;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .photo {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photo {
+    width: 270px;
+  }
 }
 
 .name {
@@ -863,12 +883,6 @@ footer .logotype span {
     margin-left: auto;
   }
 }
-@media screen and (max-width: 1200px) {
-  .footer-secondary {
-    margin-left: auto;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .flex-desktop {
     display: flex;
@@ -883,7 +897,7 @@ footer .logotype span {
   .flex-cont-tablet {
     display: flex;
     align-items: baseline;
-    padding-right: 74px;
+    justify-content: space-evenly;
     margin-bottom: 60px;
   }
 }
@@ -1260,17 +1274,6 @@ input {
   border-style: none;
 }
 
-@media screen and (min-width: 768px) {
-  .container-portfolio {
-    width: 804px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container-portfolio {
-    width: 1209px;
-  }
-}
-
 .filter {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1304,7 +1307,7 @@ input {
 
 .filter-button {
   margin-right: 8px;
-  margin-top: 15px;
+  margin-bottom: 15px;
   cursor: pointer;
   min-width: 73px;
   font-weight: 500;
@@ -1330,6 +1333,10 @@ input {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color: #ffffff;
   background-color: #2196f3;
+}
+
+.cards-pics {
+  width: 100%;
 }
 
 .work-link {
