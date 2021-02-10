@@ -49,13 +49,17 @@
 }
 .text-overlay-basic {
   margin: 0;
-  padding: 63px 24px;
+  padding: 15px 24px;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.56;
   color: $main-text-color;
+  @media screen and (min-width: 480px) {
+    padding: 63px 24px;
+    font-size: 18px;
+  }
 }
 .work-experience-tittle {
   margin-bottom: 4px;

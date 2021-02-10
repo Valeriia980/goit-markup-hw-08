@@ -1,3 +1,16 @@
+.portfolio-container {
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 772px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1209px;
+  }
+}
+
 .filter {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -20,9 +33,16 @@
     margin-bottom: 30px;
   }
 }
+.filter-buttons > .button-next:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+}
 .filter-button {
-  margin-right: 8px;
-  margin-bottom: 15px;
   cursor: pointer;
   min-width: 73px;
   font-weight: 500;
@@ -50,4 +70,13 @@
 }
 .cards-pics {
   width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
