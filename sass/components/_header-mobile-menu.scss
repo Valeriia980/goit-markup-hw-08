@@ -18,13 +18,17 @@
   }
 }
 .is-open {
+  overflow-y: scroll;
   display: block;
+  z-index: 10;
+  height: 100vh;
 }
 
 .menu-button {
-  z-index: 10;
-  margin-left: auto;
-  display: inline-flex;
+  position: absolute;
+  height: 50px;
+  right: 15px;
+  top: 10px;
   padding: 0;
   background-color: $primary-bgr;
   border-style: none;

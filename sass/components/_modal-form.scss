@@ -14,7 +14,12 @@
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+
+  &:focus {
+    border-color: $button-link-color;
+  }
 }
+
 .comment-area {
   height: 120px;
   width: 100%;
@@ -23,6 +28,10 @@
   border-radius: 4px;
   padding: 12px 16px;
   margin-top: 4px;
+
+  &:focus {
+    border-color: $button-link-color;
+  }
 }
 .name-label {
   margin-bottom: 4px;
@@ -40,6 +49,7 @@
 .condition-input-hidden:focus {
   background: $button-link-color;
 }
+
 input:focus + .form-img {
   fill: $button-link-color;
 }
