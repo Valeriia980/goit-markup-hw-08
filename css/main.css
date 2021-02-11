@@ -122,6 +122,11 @@ header {
   margin-bottom: 300px;
   padding: 0;
 }
+@media screen and (max-width: 479px) {
+  .main-nav {
+    margin-bottom: 100px;
+  }
+}
 @media screen and (min-width: 768px) {
   .main-nav {
     display: flex;

@@ -2,6 +2,9 @@
   margin: 0;
   margin-bottom: 300px;
   padding: 0;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 100px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
