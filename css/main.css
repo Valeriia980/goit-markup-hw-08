@@ -745,7 +745,8 @@ header {
 }
 
 .photo {
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 100%;
 }
 @media screen and (min-width: 480px) {
@@ -785,7 +786,6 @@ header {
 
 .command {
   padding: 30px 32px;
-  margin-top: -30px;
 }
 
 .social-link {
